@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "shop-2-app-test"
+client_id = "2683ab41181d5c697ce7b7967855bd94"
+application_url = "https://oops-entrepreneurs-roberts-configurations.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_files"
+
+[auth]
+redirect_urls = [
+  "https://oops-entrepreneurs-roberts-configurations.trycloudflare.com/auth/callback",
+  "https://oops-entrepreneurs-roberts-configurations.trycloudflare.com/auth/shopify/callback",
+  "https://oops-entrepreneurs-roberts-configurations.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-91697d0f.myshopify.com"
